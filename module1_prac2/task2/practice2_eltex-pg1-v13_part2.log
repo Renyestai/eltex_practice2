@@ -1,0 +1,132 @@
+Script started on 2025-11-05 00:55:09+07:00 [TERM="dumb" TTY="/dev/pts/178" COLUMNS="124" LINES="36"]
+eltex-pg1-v13@eltex-2025-autumn:~$ ssh root@172.16.9.187
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:	   https://landscape.canonical.com
+ * Support:	   https://ubuntu.com/pro
+
+ System information as of Tue Nov  4 05:55:48 PM UTC 2025
+
+  System load:	0.0		   Processes:		   116
+  Usage of /:	42.6% of 14.66GB   Users logged in:	   1
+  Memory usage: 16%		   IPv4 address for ens18: 172.16.9.187
+  Swap usage:	0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+91 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+Каршиганова Азиза Бейсенбеккызы
+Sun Nov	 2 04:14:08 PM UTC 2025
+Sun Nov	 2 04:17:54 PM UTC 2025
+Sun Nov	 2 04:26:08 PM UTC 2025
+Last login: Tue Nov  4 16:08:46 2025 from 172.16.8.4
+root@eltex-practice2-pg1-v13:~# journalctll-b --since=@0 --until=+20s | head -10
+Oct 15 07:51:51 localhost kernel: Linux version 6.8.0-55-generic (buildd@lcy02-amd64-095) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #57-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb 12 23:42:21 UTC 2025 (Ubuntu 6.8.0-55.57-generic 6.8.12)
+Oct 15 07:51:51 localhost kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-55-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Oct 15 07:51:51 localhost kernel: KERNEL supported cpus:
+Oct 15 07:51:51 localhost kernel:   Intel GenuineIntel
+Oct 15 07:51:51 localhost kernel:   AMD AuthenticAMD
+Oct 15 07:51:51 localhost kernel:   Hygon HygonGenuine
+Oct 15 07:51:51 localhost kernel:   Centaur CentaurHauls
+Oct 15 07:51:51 localhost kernel:   zhaoxin   Shanghai
+Oct 15 07:51:51 localhost kernel: BIOS-provided physical RAM map:
+Oct 15 07:51:51 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+<rce=$3;e$1=$2=$3="";pprint3sourcek$0}'o/var/log/auth.log=|"sedr's/\[[0-9]*\]//g'v|rsort/|uheado-15 sed 's/\[[0-9]*\]//g'
+chage:	 changed password expiry for user1
+chage:	 changed password expiry for user2
+chage:	 changed password expiry for user3
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+CRON:	pam_unix(cron:session): session closed for user root
+<"";@print-sourcec$0}'g/var/log/auth.log | sed 's/\[[0-9]*\]//g' | sort | uniqh-ch|hsorth-nrh|hhead--10
+    472 CRON:	pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+    472 CRON:	pam_unix(cron:session): session closed for user root
+      6 sshd:	pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+      5 su:   pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+      5 su:   pam_unix(su-l:session): session closed for user user2
+      5 sshd:	pam_unix(sshd:session): session closed for user root
+      4 su:   (to user2) root on pts/0
+      4 sudo:	pam_unix(sudo:session): session closed for user root
+      3 sudo:	pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+      2 sudo:	root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /etc/sudoers.d/allow_user2_dmesg
+<o/var/log/auth.log2|psedv's/\[[0-9]*\]//g' | sort | uniq -c | sort -nr | head -10
+    472 CRON:	pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+    472 CRON:	pam_unix(cron:session): session closed for user root
+      6 sshd:	pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+      5 su:   pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+      5 su:   pam_unix(su-l:session): session closed for user user2
+      5 sshd:	pam_unix(sshd:session): session closed for user root
+      4 su:   (to user2) root on pts/0
+      4 sudo:	pam_unix(sudo:session): session closed for user root
+      3 sudo:	pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+      2 sudo:	root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /etc/sudoers.d/allow_user2_dmesg
+<(awkI-F:,-veu="$username"m'u-==t$1o{printa$4}'F/etc/group);recho""$uid,t$username,$$groups";gdone)|rhead"-10id, $usernam
+65534, nobody,
+1003, user3,
+998, systemd-network,
+997, systemd-timesync,
+992, systemd-resolve,
+991, polkitd,
+989, fwupd-refresh,
+109, sshd,
+108, usbmux,
+107, landscape,
+root@eltex-practice2-pg1-v13:~# dmesg | grep -i "kernel" | head -20
+[    0.000000] KERNEL supported cpus:
+[    0.044714] Booting paravirtualized kernel on KVM
+[    0.045659] Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-55-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[    0.045690] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-55-generic", will be passed to user space.
+[    0.095281] Memory: 3933488K/4193760K available (22528K kernel code, 4443K rwdata, 14344K rodata, 4988K init, 4716K bss, 260012K reserved, 0K cma-reserved)
+[    0.252692] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.252720] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.252745] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.478712] Loaded X.509 cert 'Build time autogenerated kernel key: e0bedf6fa049a1e09bd65ebab3904f14cdd5bc68'
+[    0.481925] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    0.610820] Loaded X.509 cert 'Build time autogenerated kernel key: e0bedf6fa049a1e09bd65ebab3904f14cdd5bc68'
+[    0.630285] Freeing unused kernel image (initmem) memory: 4988K
+[    0.630982] Write protecting the kernel read-only data: 38912k
+[    0.631973] Freeing unused kernel image (rodata/data gap) memory: 2040K
+[    4.132099] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    4.142774] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    4.147774] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    4.190066] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[    4.193857] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[    4.198100] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+root@eltex-practice2-pg1-v13:~# wc -l /var/log/kern.log
+33 /var/log/kern.log
+root@eltex-practice2-pg1-v13:~# awk '
+> /^Start-Date:/ {start=$0}
+> /^Commandline:/ {cmd=$0}
+> /^End-Date:/ {print "Commandline: " cmd "; " start "; " $0; start=""; cmd=""}
+> ' /var/apt/history.log
+Commandline: Commandline: apt install bzip2; Start-Date: 2025-11-02  16:03:38; End-Date: 2025-11-02  16:03:42
+root@eltex-practice2-pg1-v13:~# exit
+logout
+Connection to 172.16.9.187 closed.
+eltex-pg1-v13@eltex-2025-autumn:~$ exit
+exit
+
+Script done on 2025-11-05 01:06:53+07:00 [COMMAND_EXIT_CODE="0"]
