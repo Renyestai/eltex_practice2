@@ -1,560 +1,0 @@
-Script started on 2025-11-05 02:26:02+07:00 [TERM="dumb" TTY="/dev/pts/179" COLUMNS="124" LINES="29"]
-eltex-pg1-v13@eltex-2025-autumn:~$ ssh root@172.16.9.187
-Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Tue Nov  4 07:26:18 PM UTC 2025
-
-  System load:  0.0                Processes:              115
-  Usage of /:   42.6% of 14.66GB   Users logged in:        1
-  Memory usage: 16%                IPv4 address for ens18: 172.16.9.187
-  Swap usage:   0%
-
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
-
-Expanded Security Maintenance for Applications is not enabled.
-
-91 updates can be applied immediately.
-12 of these updates are standard security updates.
-To see these additional updates run: apt list --upgradable
-
-Enable ESM Apps to receive additional future security updates.
-See https://ubuntu.com/esm or run: sudo pro status
-
-
-*** System restart required ***
-Каршиганова Азиза Бейсенбеккызы
-Sun Nov  2 04:14:08 PM UTC 2025
-Sun Nov  2 04:17:54 PM UTC 2025
-Sun Nov  2 04:26:08 PM UTC 2025
-Last login: Tue Nov  4 17:55:48 2025 from 172.16.8.4
-root@eltex-practice2-pg1-v13:~# exit\
-root@eltex-practice2-pg1-v13:~# git config --global user.name "renyestai"
-root@eltex-practice2-pg1-v13:~# git config --global user.email "akseleu@yahoo.com"
-root@eltex-practice2-pg1-v13:~# git confil g --global init.defaultBranch main
-root@eltex-practice2-pg1-v13:~# sudo apt update
-[33m0% [Working][0m            Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
-[33m0% [Waiting for headers][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
-[33m0% [2 InRelease 6,920 B/126 kB 5%] [Waiting for headers][0m                                                        Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
-[33m0% [2 InRelease 11.8 kB/126 kB 9%] [3 InRelease 14.2 kB/126 kB 11%][0m[33m                                                                   0% [3 InRelease 37.3 kB/126 kB 30%][0m[33m0% [Waiting for headers] [3 InRelease 43.1 kB/126 kB 34%][0m                                                         Get:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
-[33m0% [4 InRelease 4,096 B/126 kB 3%] [3 InRelease 48.9 kB/126 kB 39%][0m[33m                                                                   0% [3 InRelease 51.8 kB/126 kB 41%][0m[33m0% [Waiting for headers] [3 InRelease 66.3 kB/126 kB 53%][0m                                                         Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
-[33m0% [5 Components-amd64 45.6 kB/175 kB 26%] [3 InRelease 79.3 kB/126 kB 63%][0m                                                                           Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
-                                                                           Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [378 kB]
-[33m0% [7 Components-amd64 78.5 kB/378 kB 21%] [3 InRelease 85.1 kB/126 kB 67%][0m[33m0% [5 Components-amd64 store 0 B] [7 Components-amd64 78.5 kB/378 kB 21%] [3 InRelease 85.1 kB/126 kB 67%][0m[33m                                                                                                          0% [7 Components-amd64 78.5 kB/378 kB 21%] [3 InRelease 99.6 kB/126 kB 79%][0m[33m0% [7 Components-amd64 78.5 kB/378 kB 21%] [3 InRelease 99.6 kB/126 kB 79%][0m[33m                                                                           0% [Waiting for headers] [3 InRelease 120 kB/126 kB 95%][0m                                                        Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
-[33m0% [Waiting for headers] [3 InRelease 120 kB/126 kB 95%][0m[33m0% [7 Components-amd64 store 0 B] [Waiting for headers] [3 InRelease 120 kB/126 kB 95%][0m                                                                                       Get:9 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7,140 B]
-[33m0% [7 Components-amd64 store 0 B] [9 Components-amd64 6,923 B/7,140 B 97%] [3 InRelease 123 kB/126 kB 97%][0m[33m                                                                                                          0% [7 Components-amd64 store 0 B] [3 InRelease 123 kB/126 kB 97%][0m                                                                 Get:10 http://ru.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
-                                                                 Get:11 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
-[33m0% [7 Components-amd64 store 0 B] [11 Components-amd64 9,791 B/11.0 kB 89%] [3 InRelease 123 kB/126 kB 97%][0m[33m                                                                                                           0% [7 Components-amd64 store 0 B] [3 InRelease 123 kB/126 kB 97%][0m[33m                                                                 0% [7 Components-amd64 store 0 B] [Waiting for headers][0m[33m42% [7 Components-amd64 store 0 B] [Waiting for headers][0m                                                        Get:12 http://ru.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
-[33m42% [7 Components-amd64 store 0 B] [12 Components-amd64 212 B/212 B 100%] [Waiting for headers][0m[33m                                                                                               42% [7 Components-amd64 store 0 B] [Waiting for headers][0m[33m                                                        42% [Waiting for headers][0m[33m42% [Waiting for headers][0m[33m42% [9 Components-amd64 store 0 B] [Waiting for headers][0m[33m                                                        42% [Waiting for headers][0m[33m42% [Waiting for headers][0m[33m42% [11 Components-amd64 store 0 B] [Waiting for headers][0m[33m                                                         42% [Waiting for headers][0m[33m43% [Waiting for headers][0m                         Get:13 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,299 kB]
-[33m43% [13 Packages 2,655 B/1,299 kB 0%][0m[33m                                     75% [Working][0m[33m75% [13 Packages store 0 B][0m                           Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
-[33m75% [13 Packages store 0 B] [14 Components-amd64 15.7 kB/21.5 kB 73%][0m                                                                     Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [208 B]
-                                                                     Get:16 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [906 kB]
-[33m                                                                     76% [13 Packages store 0 B] [16 Packages 15.7 kB/906 kB 2%][0m[33m                                                           83% [16 Packages 292 kB/906 kB 32%][0m[33m83% [14 Components-amd64 store 0 B] [16 Packages 315 kB/906 kB 35%][0m[33m                                                                   85% [16 Packages 368 kB/906 kB 41%][0m[33m85% [15 Components-amd64 store 0 B] [16 Packages 368 kB/906 kB 41%][0m[33m                                                                   85% [16 Packages 368 kB/906 kB 41%][0m[33m                                   98% [Waiting for headers][0m                         Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.2 kB]
-[33m98% [17 Components-amd64 2,596 B/52.2 kB 5%][0m[33m98% [16 Packages store 0 B] [17 Components-amd64 2,596 B/52.2 kB 5%][0m                                                                    Get:18 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
-[33m                                                                    100% [16 Packages store 0 B][0m[33m                            100% [Working][0m[33m100% [17 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [Working][0m              Fetched 3,230 kB in 1s (2,637 kB/s)
-^[[A^[[A^[[BReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 39%Reading package lists... 39%Reading package lists... 54%Reading package lists... 54%Reading package lists... 55%Reading package lists... 55%Reading package lists... 55%Reading package lists... 55%Reading package lists... 59%Reading package lists... 59%Reading package lists... 62%Reading package lists... 62%Reading package lists... 68%Reading package lists... 68%Reading package lists... 73%Reading package lists... 73%Reading package lists... 77%Reading package lists... 77%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 83%Reading package lists... 83%Reading package lists... 85%Reading package lists... 85%Reading package lists... 91%Reading package lists... 91%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
-84 packages can be upgraded. Run 'apt list --upgradable' to see them.
-root@eltex-practice2-pg1-v13:~# sudo pat   apt install git gh
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
-git is already the newest version (1:2.43.0-1ubuntu7.3).
-git set to manually installed.
-The following NEW packages will be installed:
-  gh
-0 upgraded, 1 newly installed, 0 to remove and 84 not upgraded.
-Need to get 8,836 kB of archives.
-After this operation, 45.4 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-[33m0% [Working][0m            Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubuntu0.3 [8,836 kB]
-[33m0% [1 gh 11.8 kB/8,836 kB 0%][0m[33m41% [1 gh 4,571 kB/8,836 kB 52%][0m[33m                                100% [Working][0m              Fetched 8,836 kB in 1s (8,695 kB/s)
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
-debconf: falling back to frontend: Readline
-
-7[0;27r8[1ASelecting previously unselected package gh.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 125179 files and directories currently installed.)
-Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
-7[28;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[28;0f[42m[30mProgress: [ 20%][49m[39m [####################..................................................................................] 8Unpacking gh (2.45.0-1ubuntu0.3) ...
-7[28;0f[42m[30mProgress: [ 40%][49m[39m [########################################..............................................................] 8Setting up gh (2.45.0-1ubuntu0.3) ...
-7[28;0f[42m[30mProgress: [ 60%][49m[39m [#############################################################.........................................] 87[28;0f[42m[30mProgress: [ 80%][49m[39m [#################################################################################.....................] 8Processing triggers for man-db (2.12.0-4build2) ...
-
-7[0;28r8[1A[JScanning processes... [                                                                                                    ]Scanning processes... [                                                                                                    ]Scanning processes... [=                                                                                                   ]Scanning processes... [==                                                                                                  ]Scanning processes... [===                                                                                                 ]Scanning processes... [====                                                                                                ]Scanning processes... [=====                                                                                               ]Scanning processes... [=====                                                                                               ]Scanning processes... [======                                                                                              ]Scanning processes... [=======                                                                                             ]Scanning processes... [========                                                                                            ]Scanning processes... [=========                                                                                           ]Scanning processes... [==========                                                                                          ]Scanning processes... [==========                                                                                          ]Scanning processes... [===========                                                                                         ]Scanning processes... [============                                                                                        ]Scanning processes... [=============                                                                                       ]Scanning processes... [==============                                                                                      ]Scanning processes... [===============                                                                                     ]Scanning processes... [===============                                                                                     ]Scanning processes... [================                                                                                    ]Scanning processes... [=================                                                                                   ]Scanning processes... [==================                                                                                  ]Scanning processes... [===================                                                                                 ]Scanning processes... [====================                                                                                ]Scanning processes... [====================                                                                                ]Scanning processes... [=====================                                                                               ]Scanning processes... [======================                                                                              ]Scanning processes... [=======================                                                                             ]Scanning processes... [========================                                                                            ]Scanning processes... [=========================                                                                           ]Scanning processes... [=========================                                                                           ]Scanning processes... [==========================                                                                          ]Scanning processes... [===========================                                                                         ]Scanning processes... [============================                                                                        ]Scanning processes... [=============================                                                                       ]Scanning processes... [==============================                                                                      ]Scanning processes... [==============================                                                                      ]Scanning processes... [===============================                                                                     ]Scanning processes... [================================                                                                    ]Scanning processes... [=================================                                                                   ]Scanning processes... [==================================                                                                  ]Scanning processes... [===================================                                                                 ]Scanning processes... [===================================                                                                 ]Scanning processes... [====================================                                                                ]Scanning processes... [=====================================                                                               ]Scanning processes... [======================================                                                              ]Scanning processes... [=======================================                                                             ]Scanning processes... [========================================                                                            ]Scanning processes... [========================================                                                            ]Scanning processes... [=========================================                                                           ]Scanning processes... [==========================================                                                          ]Scanning processes... [===========================================                                                         ]Scanning processes... [============================================                                                        ]Scanning processes... [=============================================                                                       ]Scanning processes... [=============================================                                                       ]Scanning processes... [==============================================                                                      ]Scanning processes... [===============================================                                                     ]Scanning processes... [================================================                                                    ]Scanning processes... [=================================================                                                   ]Scanning processes... [==================================================                                                  ]Scanning processes... [==================================================                                                  ]Scanning processes... [===================================================                                                 ]Scanning processes... [====================================================                                                ]Scanning processes... [=====================================================                                               ]Scanning processes... [======================================================                                              ]Scanning processes... [=======================================================                                             ]Scanning processes... [=======================================================                                             ]Scanning processes... [========================================================                                            ]Scanning processes... [=========================================================                                           ]Scanning processes... [==========================================================                                          ]Scanning processes... [===========================================================                                         ]Scanning processes... [============================================================                                        ]Scanning processes... [============================================================                                        ]Scanning processes... [=============================================================                                       ]Scanning processes... [==============================================================                                      ]Scanning processes... [===============================================================                                     ]Scanning processes... [================================================================                                    ]Scanning processes... [=================================================================                                   ]Scanning processes... [=================================================================                                   ]Scanning processes... [==================================================================                                  ]Scanning processes... [===================================================================                                 ]Scanning processes... [====================================================================                                ]Scanning processes... [=====================================================================                               ]Scanning processes... [======================================================================                              ]Scanning processes... [======================================================================                              ]Scanning processes... [=======================================================================                             ]Scanning processes... [========================================================================                            ]Scanning processes... [=========================================================================                           ]Scanning processes... [==========================================================================                          ]Scanning processes... [===========================================================================                         ]Scanning processes... [===========================================================================                         ]Scanning processes... [============================================================================                        ]Scanning processes... [=============================================================================                       ]Scanning processes... [==============================================================================                      ]Scanning processes... [===============================================================================                     ]Scanning processes... [================================================================================                    ]Scanning processes... [================================================================================                    ]Scanning processes... [=================================================================================                   ]Scanning processes... [==================================================================================                  ]Scanning processes... [===================================================================================                 ]Scanning processes... [====================================================================================                ]Scanning processes... [=====================================================================================               ]Scanning processes... [=====================================================================================               ]Scanning processes... [======================================================================================              ]Scanning processes... [=======================================================================================             ]Scanning processes... [========================================================================================            ]Scanning processes... [=========================================================================================           ]Scanning processes... [==========================================================================================          ]Scanning processes... [==========================================================================================          ]Scanning processes... [===========================================================================================         ]Scanning processes... [============================================================================================        ]Scanning processes... [=============================================================================================       ]Scanning processes... [==============================================================================================      ]Scanning processes... [===============================================================================================     ]Scanning processes... [===============================================================================================     ]Scanning processes... [================================================================================================    ]Scanning processes... [=================================================================================================   ]Scanning processes... [==================================================================================================  ]Scanning processes... [=================================================================================================== ]Scanning processes... [====================================================================================================]Scanning processes...                                                                                                       
-Scanning candidates... [                                                                                                   ]Scanning candidates... [========================                                                                           ]Scanning candidates... [=================================================                                                  ]Scanning candidates... [==========================================================================                         ]Scanning candidates... [===================================================================================================]Scanning candidates...                                                                                                      
-Scanning linux images... [                                                                                                 ]Scanning linux images... [========================                                                                         ]Scanning linux images... [================================================                                                 ]Scanning linux images... [========================================================================                         ]Scanning linux images... [=================================================================================================]Scanning linux images...                                                                                                    
-
-Pending kernel upgrade!
-Running kernel version:
-  6.8.0-55-generic
-Diagnostics:
-  The currently running kernel version is not the expected kernel version 6.8.0-86-generic.
-
-Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.
-
-Restarting services...
-
-Service restarts being deferred:
- /etc/needrestart/restart.d/dbus.service
- systemctl restart getty@tty1.service
- systemctl restart systemd-logind.service
- systemctl restart unattended-upgrades.service
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-root@eltex-practice2-pg1-v13:~# ssh-keygen -t ed255189 -f ~/.ssh/eltex-practice2
-Generating public/private ed25519 key pair.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /root/.ssh/eltex-practice2
-Your public key has been saved in /root/.ssh/eltex-practice2.pub
-The key fingerprint is:
-SHA256:uZTCzAsMnJ5ZtvUOUh5KXAQZUfcHSyJRZTmvuXK7UPU root@eltex-practice2-pg1-v13
-The key's randomart image is:
-+--[ED25519 256]--+
-|    +B*o+.=.     |
-| . o.. o =oo     |
-|  + = +   ooo    |
-| . O X o o o..   |
-|  + * B S .o  E  |
-|     o * oo      |
-|      . +  .     |
-|        ..o      |
-|         ooo     |
-+----[SHA256]-----+
-root@eltex-practice2-pg1-v13:~# gh auth login
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> GitHub.com[0m
-[0;39m  GitHub Enterprise Server[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m[0;36m GitHub.com[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> HTTPS[0m
-[0;39m  SSH[0m
-7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;39m  HTTPS[0m
-[0;1;36m> SSH[0m
-7[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m[0;36m SSH[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> /root/.ssh/eltex-practice2.pub[0m
-[0;39m  Skip[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m[0;36m /root/.ssh/eltex-practice2.pub[0m
-[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;39m(GitHub CLI) [0m[?25l[?25l7[999;999f[6n8[?25h[6neltex-prca[1D[0K[1D[0Kactice2-g[1D[0Kpg1-v13[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1B[0G[1A[?25h[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;36meltex-practice2-pg1-v13[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> Login with a web browser[0m
-[0;39m  Paste an authentication token[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m[0;36m Login with a web browser[0m
-
-[0;33m![0m First copy your one-time code: [0;1;39mCC33-8A00[0m
-[0;1;39mPress Enter[0m to open github.com in your browser... 
-[0;31m![0m Failed opening a web browser at https://github.com/login/device
-  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
-  Please try entering the URL in your browser manually
-[0;32m✓[0m Authentication complete.
-- gh config set -h github.com git_protocol ssh
-[0;32m✓[0m Configured git protocol
-[0;33m![0m Authentication credentials saved in plain text
-[0;32m✓[0m Uploaded the SSH key to your GitHub account: [0;1;39m/root/.ssh/eltex-practice2.pub[0m
-[0;32m✓[0m Logged in as [0;1;39mRenyestai[0m
-root@eltex-practice2-pg1-v13:~# gh auth setup-git --hostname github.com
-root@eltex-practice2-pg1-v13:~# gh auth status
-[0;1;39mgithub.com[0m
-  [0;32m✓[0m Logged in to github.com account [0;1;39mRenyestai[0m (/root/.config/gh/hosts.yml)
-  - Active account: [0;1;39mtrue[0m
-  - Git operations protocol: [0;1;39mssh[0m
-  - Token: [0;1;39mgho_************************************[0m
-  - Token scopes: [0;1;39m'admin:public_key', 'gist', 'read:org', 'repo'[0m
-root@eltex-practice2-pg1-v13:~#                                                                                                                            root@eltex-practice2-pg1-v13:~# gh repo create --public ex                                                                                                                            root@eltex-practice2-pg1-v13:~# gh repo create --public e ext  ltex_par  ractice2
-[0;32m✓[0m Created repository Renyestai/eltex_practice2 on GitHub
-  https://github.com/Renyestai/eltex_practice2
-root@eltex-practice2-pg1-v13:~# mkdir eltex_practice2 && cd ~/eltex_practice2 
-root@eltex-practice2-pg1-v13:~/eltex_practice2# echo " # Repo for eltex exercises module 1 practice 1 and 2" >> README.md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git init
-Initialized empty Git repository in /root/eltex_practice2/.git/
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git add README.md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git commit -m ""f"i"r"t"" s"t" "c"o"m"m"i"t"
-[main (root-commit) e99b0a8] first commit
- 1 file changed, 1 insertion(+)
- create mode 100644 README.md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git branch -M main
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git remote add origin https://github.com/renyestai/eltex_practice2.git
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git status
-On branch main
-nothing to commit, working tree clean
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git push -u origin main
-Enumerating objects: 3, done.
-Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
-Delta compression using up to 2 threads
-Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 259 bytes | 259.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: This repository moved. Please use the new location:        
-remote:   https://github.com/Renyestai/eltex_practice2.git        
-To https://github.com/renyestai/eltex_practice2.git
- * [new branch]      main -> main
-branch 'main' set up to track 'origin/main'.
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir -p module1/task1
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir -p module1/task2
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir module1/task3
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@eltex-2025-autumn:/home/eltex-pg1-v13/report_part1.txt module1/task1
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/report_part1.txt module1/task1
-The authenticity of host '172.16.8.4 (172.16.8.4)' can't be established.
-ED25519 key fingerprint is SHA256:9EeAnPIp/wDj41XS55iG0Eff5a90ZLW9TTAI37NiBb0.
-This key is not known by any other names.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '172.16.8.4' (ED25519) to the list of known hosts.
-eltex-pg1-v13@172.16.8.4's password: 
-report_part1.txt                                                                                        0%    0     0.0KB/s   --:-- ETAreport_part1.txt                                                                                      100%  137     4.8KB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/eltex-pg1-v13_part2.log module1/task2
-eltex-pg1-v13@172.16.8.4's password: 
-eltex-pg1-v13_part2.log                                                                                 0%    0     0.0KB/s   --:-- ETAeltex-pg1-v13_part2.log                                                                               100% 5656     9.6MB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/eltex-pg1-v13_part3.log module1/task3
-eltex-pg1-v13@172.16.8.4's password: 
-eltex-pg1-v13_part3.log                                                                                 0%    0     0.0KB/s   --:-- ETAeltex-pg1-v13_part3.log                                                                               100%  631   841.7KB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/eltex-pg1-v13_part3_gt50M.log module1/task3
-eltex-pg1-v13@172.16.8.4's password: 
-eltex-pg1-v13_part3_gt50M.log                                                                           0%    0     0.0KB/s   --:-- ETAeltex-pg1-v13_part3_gt50M.log                                                                         100%  565   994.8KB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git add .
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	new file:   module1/task1/report_part1.txt
-	new file:   module1/task2/eltex-pg1-v13_part2.log
-	new file:   module1/task3/eltex-pg1-v13_part3.log
-	new file:   module1/task3/eltex-pg1-v13_part3_gt50M.log
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git push commit -m "Add practice 1 logs"
-[main 9cafdd2] Add practice 1 logs
- 4 files changed, 246 insertions(+)
- create mode 100644 module1/task1/report_part1.txt
- create mode 100644 module1/task2/eltex-pg1-v13_part2.log
- create mode 100644 module1/task3/eltex-pg1-v13_part3.log
- create mode 100644 module1/task3/eltex-pg1-v13_part3_gt50M.log
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git push
-Enumerating objects: 11, done.
-Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
-Delta compression using up to 2 threads
-Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
-Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 2.81 KiB | 2.81 MiB/s, done.
-Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: This repository moved. Please use the new location:        
-remote:   https://github.com/Renyestai/eltex_practice2.git        
-To https://github.com/renyestai/eltex_practice2.git
-   e99b0a8..9cafdd2  main -> main
-root@eltex-practice2-pg1-v13:~/eltex_practice2#                                                                                                                                        root@eltex-practice2-pg1-v13:~/eltex_practice2# mrk  kdir ~.ex   /ex ; let  tex_practice2_clode  ne && cd ~. /s eltex_practice2_cloe ne
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# git clone https://github.com/renyestai/eltx ex_practice2.git .
-Cloning into '.'...
-remote: Enumerating objects: 13, done.        
-remote: Counting objects:   7% (1/13)        remote: Counting objects:  15% (2/13)        remote: Counting objects:  23% (3/13)        remote: Counting objects:  30% (4/13)        remote: Counting objects:  38% (5/13)        remote: Counting objects:  46% (6/13)        remote: Counting objects:  53% (7/13)        remote: Counting objects:  61% (8/13)        remote: Counting objects:  69% (9/13)        remote: Counting objects:  76% (10/13)        remote: Counting objects:  84% (11/13)        remote: Counting objects:  92% (12/13)        remote: Counting objects: 100% (13/13)        remote: Counting objects: 100% (13/13), done.        
-remote: Compressing objects:   9% (1/11)        remote: Compressing objects:  18% (2/11)        remote: Compressing objects:  27% (3/11)        remote: Compressing objects:  36% (4/11)        remote: Compressing objects:  45% (5/11)        remote: Compressing objects:  54% (6/11)        remote: Compressing objects:  63% (7/11)        remote: Compressing objects:  72% (8/11)        remote: Compressing objects:  81% (9/11)        remote: Compressing objects:  90% (10/11)        remote: Compressing objects: 100% (11/11)        remote: Compressing objects: 100% (11/11), done.        
-remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)        
-Receiving objects:   7% (1/13)Receiving objects:  15% (2/13)Receiving objects:  23% (3/13)Receiving objects:  30% (4/13)Receiving objects:  38% (5/13)Receiving objects:  46% (6/13)Receiving objects:  53% (7/13)Receiving objects:  61% (8/13)Receiving objects:  69% (9/13)Receiving objects:  76% (10/13)Receiving objects:  84% (11/13)Receiving objects:  92% (12/13)Receiving objects: 100% (13/13)Receiving objects: 100% (13/13), done.
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# cs d~  ~/etx  c t lteix  x_practice2
-root@eltex-practice2-pg1-v13:~/eltex_practice2# echo ""#" "U"o"d"" " p"d"a"t"e" "f"r"o"m" "n"a"" " m"a"i"n" "r"e"o"" p"o" "root@eltex-practice2-pg1-v13:~/eltex_practice2# echo "# Update from main repo "" root@eltex-practice2-pg1-v13:~/eltex_practice2# echo "# Update from main repo" >> UPDATE.mb d
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git add UPDATE.M md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git commint  t -. m ""A"d"d"e"d" "E"P"" " u"p"d"a"t"e" "f"i"l"e"
-[main b2fe2ec] Added update file
- 1 file changed, 1 insertion(+)
- create mode 100644 UPDATE.md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# git push origin
-Enumerating objects: 4, done.
-Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
-Delta compression using up to 2 threads
-Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: This repository moved. Please use the new location:        
-remote:   https://github.com/Renyestai/eltex_practice2.git        
-To https://github.com/renyestai/eltex_practice2.git
-   9cafdd2..b2fe2ec  main -> main
-root@eltex-practice2-pg1-v13:~/eltex_practice2# cd ~/eltex_practice_clone2_clone
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# git fetch
-remote: Enumerating objects: 4, done.        
-remote: Counting objects:  25% (1/4)        remote: Counting objects:  50% (2/4)        remote: Counting objects:  75% (3/4)        remote: Counting objects: 100% (4/4)        remote: Counting objects: 100% (4/4), done.        
-remote: Compressing objects:  50% (1/2)        remote: Compressing objects: 100% (2/2)        remote: Compressing objects: 100% (2/2), done.        
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)        
-Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
-From https://github.com/renyestai/eltex_practice2
-   9cafdd2..b2fe2ec  main       -> origin/main
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# git log origin/main
-WARNING: terminal is not fully functional
-Press RETURN to continue 
-commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-:...skipping...
-commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-~
-~
-~
-~
-~
-(END)...skipping...
-commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)...skipping...
-commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)...skipping...
-commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-
-|^
-
-|^commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-(END)
-
-|^
-
-|^commit b2fe2ec14c3851c062a1c10c8c60338e828fa827 (origin/main, origin/HEAD)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:25:40 2025 +0000[m
-[m
-    Added update file[m
-[m
-commit 9cafdd20cbd7c2079ded80073426ba51550cee09 (HEAD -> main)[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 20:20:20 2025 +0000[m
-[m
-    Add practice 1 logs[m
-[m
-commit e99b0a8800af4eae475af6673013a6396e03d6de[m
-Author: renyestai <akseleu@yahoo.com>[m
-Date:   Tue Nov 4 19:49:38 2025 +0000[m
-[m
-    first commit[m
-~
-~
-~
-(END)
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# git diff main origin/main
-WARNING: terminal is not fully functional
-Press RETURN to continue 
-diff --git a/UPDATE.md b/UPDATE.md[m
-new file mode 100644[m
-index 0000000..65522e8[m
---- /dev/null[m
-+++ b/UPDATE.md[m
-@@ -0,0 +1 @@[m
-+# Update from main repo[m
-root@eltex-practice2-pg1-v13:~/eltex_practice2_clone# git merge origin/main
-Updating 9cafdd2..b2fe2ec
-Fast-forward
- UPDATE.md | 1 +
- 1 file changed, 1 insertion(+)
- create mode 100644 UPDATE.md
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir modele1/prac2/task1
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir module1_prac2/task2
-root@eltex-practice2-pg1-v13:~/eltex_practice2# mkdir module1_prac2/task3
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg-v13@172.16.8.4:/home/eltex-pg1-v13/practice2_eltex-pg1-v13_part1.log module1_prac2/task1
-eltex-pg1-v13@172.16.8.4's password: 
-practice2_eltex-pg1-v13_part1.log                                                                       0%    0     0.0KB/s   --:-- ETApractice2_eltex-pg1-v13_part1.log                                                                     100%   28KB  19.3MB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/practice2_eltex-pg1-v13_part2.log module2_prac2/task2
-eltex-pg1-v13@172.16.8.4's password: 
-practice2_eltex-pg1-v13_part2.log                                                                       0%    0     0.0KB/s   --:-- ETApractice2_eltex-pg1-v13_part2.log                                                                     100% 7844    10.9MB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# scp eltex-pg1-v13@172.16.8.4:/home/eltex-pg1-v13/practice2_eltex-pg1-v13_part3.log module2_prac2/task3
-eltex-pg1-v13@172.16.8.4's password: 
-practice2_eltex-pg1-v13_part3.log                                                                       0%    0     0.0KB/s   --:-- ETApractice2_eltex-pg1-v13_part3.log                                                                     100%  108KB  62.3MB/s   00:00    
-root@eltex-practice2-pg1-v13:~/eltex_practice2# exit
-logout
-Connection to 172.16.9.187 closed.
-eltex-pg1-v13@eltex-2025-autumn:~$ exit
-exit
-
-Script done on 2025-11-05 03:38:30+07:00 [COMMAND_EXIT_CODE="0"]
