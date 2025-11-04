@@ -1,0 +1,22 @@
+cd ~
+mkdir -p D1/D2/D3
+touch D1/D2/file.txt
+echo "Hello world!" >> D1/D2/file.txt
+ln -s ../file.txt D1/D2/D3/sym_link_file.txt
+ln D1/D2/file.txt D1/D2/D3/hard_link_file.txt
+ls D1/D2/D3
+readlink D1/D2/D3/sym_link_file.txt
+ls -i D1/D2/file.txt D1/D2/D3/hard_link_file.txt
+file D1/D2/D3/hard_link_file.txt
+file D1/D2/D3/sym_link_file.txt
+mv D1/D2/file.txt D1
+file D1/D2/D3/sym_link_file.txt
+file D1/D2/D3/hard_link_file.txt
+cat D1/D2/D3/sym_link_file.txt
+cat D1/D2/D3/hard_link_file.txt
+rm -r D1/D2
+find / -type f -size +20M 2> /dev/null -exec du -h {} \;
+find ~ -type f -mtime -1
+which find
+file $(which find)
+file /boot/initrd.img*
